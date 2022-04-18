@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import Layout from "./components/Layout";
 
 const Home = () => {
-  return (
-    <div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quas sapiente cum esse ullam quam facere temporibus pariatur. Amet laudantium quaerat eius voluptatem placeat nisi odio beatae minima voluptatibus! Odio?
-      </p>
-    </div>
-  )
-}
+	return (
+		<Layout title="Home">
+			
+		</Layout>
+	);
+};
 
 export default Home;
