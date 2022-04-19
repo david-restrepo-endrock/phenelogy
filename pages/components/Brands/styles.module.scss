@@ -1,0 +1,33 @@
+@import "../../../styles/vars";
+
+.brands {
+    background-color: $second-color;
+    border-radius: 8px;
+    height: 376px;
+    margin-top: 150px;
+    position: relative;
+
+    h2 {
+        text-align: center;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("/img/berries.png");
+        background-repeat: no-repeat;
+        width: 730px;
+        height: 996px;
+        background-size: contain;
+        bottom: 0;
+        left: -144px;
+    }
+
+    .blockBrands {
+        background-color: $white-color;
+        border-radius: 6px;
+        height: 168px;
+        width: 805px;
+        margin-left: 265px;
+    }
+}

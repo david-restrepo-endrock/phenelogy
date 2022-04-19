@@ -1,0 +1,26 @@
+@import "../../../styles/vars";
+
+.blockTextTwo {
+  
+
+    .blockImage {
+        position: relative;
+        
+        &::before {
+            background-image: url("/img/yuzu.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+            height: 397px;
+            position: absolute;
+            width: 397px;
+            z-index: 1;
+            right: -159px;
+            top: -218px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,124 @@
+@import "../../../styles/vars";
+
+.blockTextThird {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("/img/flowers.png");
+        background-repeat: no-repeat;
+        width: 230px;
+        height: 914px;
+        background-size: cover;
+        top: -141px;
+    }
+
+	.blockText {
+		background-color: $four-color;
+		border-radius: 8px;
+		border: 1px solid $four-color;
+		margin-bottom: 30px;
+		padding: 30px;
+
+		&.variant {
+			background-color: transparent;
+		}
+
+		&.blockIconEstrogen {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/estrogen-free.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+				content: "";
+				height: 48px;
+				left: -16px;
+				position: absolute;
+				top: -21px;
+				width: 48px;
+			}
+		}
+
+		&.blockIconUsa {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/usa.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				content: "";
+				height: 48px;
+				left: -16px;
+				position: absolute;
+				top: -10px;
+				width: 48px;
+			}
+		}
+
+		&.blockIconDrugFree {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/drug-free.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				content: "";
+				height: 42px;
+				left: -16px;
+				position: absolute;
+				top: -10px;
+				width: 42px;
+			}
+		}
+
+		&.blockIconArtificial {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/no-artificial-dyes.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				content: "";
+				height: 44px;
+				left: -16px;
+				position: absolute;
+				top: -10px;
+				width: 34px;
+			}
+		}
+
+		&.blockIconFreeShipping {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/free-shipping.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				content: "";
+				height: 38px;
+				left: -16px;
+				position: absolute;
+				top: -10px;
+				width: 38px;
+			}
+		}
+
+		&.blockIconScience {
+			position: relative;
+
+			&::before {
+				background-image: url("/img/science-backed.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				content: "";
+				height: 45px;
+				left: -16px;
+				position: absolute;
+				top: -10px;
+				width: 42px;
+			}
+		}
+	}
+}

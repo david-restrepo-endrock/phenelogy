@@ -1,0 +1,36 @@
+@import "../../../styles/vars";
+
+.contentBlockTextOne {
+    align-items: center;
+    background-color: $third-color;
+    display: flex;
+    height: 520px;
+
+    .block {
+        width: 482px;
+        height: 343px;
+        margin-left: 50px ;
+        background-color: $second-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            padding: 0 50px;
+        }
+    }
+
+    .blockGroupImages {
+
+        display: flex;
+        margin-left: 40px;
+
+        .blockImage {
+            margin: 0 20px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+    }
+}

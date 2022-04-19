@@ -1,0 +1,34 @@
+@import "../../../styles/vars";
+
+.banner {
+	align-items: center;
+	background-color: $primary-color;
+	display: flex;
+	height: auto;
+	position: relative;
+	width: 100%;
+	height: 460px;
+
+	p {
+		width: 465px;
+	}
+
+	.image {
+		left: -116px;
+		position: absolute;
+		right: 0;
+		top: -36px;
+	}
+
+	&::after {
+		background-image: url("/img/tangerine2.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 852px;
+		position: absolute;
+		right: 0;
+		top: -107px;
+		width: 536px;
+	}
+}
