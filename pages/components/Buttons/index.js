@@ -4,7 +4,7 @@ import React from "react";
 const Button = ({ text }) => {
 	return (
 		<>
-			<div className="mt-5">
+			<div className="mt-4 mt-md-5">
 				<Link href="/">
 					<a className="button-primary">{text}</a>
 				</Link>

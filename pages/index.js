@@ -16,7 +16,7 @@ const Home = () => {
 			<BlockTextOne />
 			<BlockTextTwo />
 			<Brands />
-			{/* <CustomerFavorites />  */}
+			<CustomerFavorites />
 			<BlockTextThird />
 			<BlockAbout />
 			<Footer />
