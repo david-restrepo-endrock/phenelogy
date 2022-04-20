@@ -1,18 +1,19 @@
 @import "../../../styles/vars";
 
 .blockTextThird {
-    position: relative;
+	position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        background-image: url("/img/flowers.png");
-        background-repeat: no-repeat;
-        width: 230px;
-        height: 914px;
-        background-size: cover;
-        top: -141px;
-    }
+	&::after {
+		background-image: url("/img/flowers.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 960px;
+		max-width: 250px;
+		position: absolute;
+		top: -130px;
+		width: 100%;
+	}
 
 	.blockText {
 		background-color: $four-color;
@@ -118,6 +119,63 @@
 				position: absolute;
 				top: -10px;
 				width: 42px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&::after {
+			height: 404px;
+			top: 26px;
+		}
+
+		.blockText {
+			padding: 17px 12px;
+
+			h5 {
+				margin: 0;
+			}
+
+			&.blockIconEstrogen {
+				&::before {
+					width: 32px;
+					height: 32px;
+				}
+			}
+
+			&.blockIconUsa {
+				&::before {
+					width: 30px;
+					height: 27px;
+				}
+			}
+
+			&.blockIconDrugFree {
+				&::before {
+					width: 28px;
+					height: 28px;
+				}
+			}
+
+			&.blockIconArtificial {
+				&::before {
+					width: 22px;
+					height: 29px;
+				}
+			}
+
+			&.blockIconFreeShipping {
+				&::before {
+					width: 25px;
+					height: 25px;
+				}
+			}
+
+			&.blockIconScience {
+				&::before {
+					width: 28px;
+					height: 30px;
+				}
 			}
 		}
 	}

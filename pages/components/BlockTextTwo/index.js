@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./styles.module.scss";
+import Button from "../Buttons";
 
 
 const BlockTextTwo = () => {
@@ -10,18 +11,18 @@ const BlockTextTwo = () => {
 				<div className="container diff">
 					<div className="row mt-md-5 pt-md-3 justify-content-between">
 						<div className="col-12 col-sm-12 col-md-5">
-							<h2>
+							<h2 className="text-center text-md-start my-5 mb-md-0">
 								Get symptom relief and menopause guidance tailored to you.
 							</h2>
 						</div>
-						<div className="col-12 col-sm-12 col-md-4 d-flex justify-content-end">
+						<div className="col-12 col-sm-12 col-md-4 d-flex justify-content-end px-4 px-md-0">
 							<div>
 								<div className={styles.blockImage}>
 									<Image
 										src="/img/symptom.png"
 										width="445"
 										height="472"
-										layout="fixed"
+										layout="responsive"
 									/>
 								</div>
 								<div className="mt-4">
@@ -31,6 +32,7 @@ const BlockTextTwo = () => {
 										ahead.
 									</p>
 								</div>
+								<Button text="Take Assessment" />
 							</div>
 						</div>
 					</div>

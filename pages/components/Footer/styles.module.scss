@@ -1,0 +1,81 @@
+@import "../../../styles/vars";
+
+.wavyPlantImage {
+	position: relative;
+	height: 1px;
+
+	&::before {
+		background-image: url("/img/wavy-plant.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 500px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		top: -99px;
+
+		@media (max-width: 767px) {
+			background-image: url("/img/wavy-plant-mob-2.png");
+			height: 400px;
+		}
+	}
+}
+
+.footer {
+	background-color: $dark-color;
+	margin-top: 400px;
+
+
+	.item {
+		border-top: 1px solid;
+		border-left: 1px solid;
+		border-bottom: 1px solid;
+		padding: 100px;
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		ul {
+			li {
+				list-style: none;
+				margin-bottom: 8px;
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+
+		p {
+			font-size: 10px;
+			line-height: 14px;
+			color: #ABABAB;
+			padding: 0 60px 0 0;
+		}
+	}
+
+	@media(max-width: 767px) {
+
+		margin-top: 200px;
+
+		.item {
+			padding: 22px 30px 22px;
+
+			ul {
+				li {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+
+			p {
+				padding: 0 0 0 0;
+			}
+		}
+	}
+}

@@ -1,36 +1,70 @@
 @import "../../../styles/vars";
 
 .contentBlockTextOne {
-    align-items: center;
-    background-color: $third-color;
-    display: flex;
-    height: 520px;
+	align-items: center;
+	background-color: $third-color;
+	display: flex;
+	height: 520px;
 
-    .block {
-        width: 482px;
-        height: 343px;
-        margin-left: 50px ;
-        background-color: $second-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+	.block {
+		width: 100%;
+		height: 343px;
+		margin-left: 5px;
+		background-color: $second-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-        h2 {
-            padding: 0 50px;
-        }
-    }
+		h2 {
+			padding: 0 70px;
+		}
+	}
 
-    .blockGroupImages {
+	.blockGroupImages {
+		display: flex;
+		margin-left: 40px;
 
-        display: flex;
-        margin-left: 40px;
+		.blockImage {
+			margin: 0 20px;
 
-        .blockImage {
-            margin: 0 20px;
-        }
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
 
-        h4 {
-            text-align: center;
-        }
-    }
+		h4 {
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 767px) {
+		align-items: flex-end;
+		height: 644px;
+		padding-bottom: 62px;
+
+		.block {
+			height: 112px;
+			margin-left: 0;
+
+			h2 {
+				padding: 0 18px;
+			}
+		}
+
+		.blockGroupImages {
+			flex-wrap: wrap;
+			margin-left: 0;
+			justify-content: center;
+
+			.blockImage {
+				margin: 0 20px 20px;
+
+				img {
+					width: 64px;
+					height: 64px;
+				}
+			}
+		}
+	}
 }

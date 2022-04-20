@@ -43,6 +43,15 @@ h4 {
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 0.02em;
+
+	&.white {
+		color: $white-color;
+	}
+
+	&.bold {
+		font-family: $font-grotesque-bold;
+		font-weight: 900;
+	}
 }
 
 h5 {
@@ -67,8 +76,67 @@ p {
 	}
 }
 
+a {
+	&.white {
+		color: $white-color;
+	}
+
+	&.button-primary {
+		background-color: $white-color;
+		border-radius: 100px;
+		color: $black-color;
+		font-size: 16px;
+		font-weight: 900;
+		margin-top: 20px;
+		padding: 22px 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-family: $font-grotesque-bold;
+	}
+
+	&.footer-link {
+		font-family: $font-grotesque-regular;
+		font-size: 18px;
+	}
+}
+
+span {
+	font-family: $font-grotesque-regular;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+}
+
 @media (min-width: 1440px) {
 	.container.diff {
 		max-width: 1140px !important;
 	}
+}
+
+
+@media(max-width: 767px) {
+	h1 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	h2 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	h5 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	a {
+		&.button-primary {
+			font-size: 14px;
+			padding: 16px 24px;
+		}
+	}
+
 }

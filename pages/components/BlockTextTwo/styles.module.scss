@@ -1,26 +1,47 @@
 @import "../../../styles/vars";
 
 .blockTextTwo {
-  
+	.blockImage {
+		position: relative;
 
-    .blockImage {
-        position: relative;
-        
-        &::before {
-            background-image: url("/img/yuzu.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            content: "";
-            height: 397px;
-            position: absolute;
-            width: 397px;
-            z-index: 1;
-            right: -159px;
-            top: -218px;
+		&::before {
+			background-image: url("/img/yuzu.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: "";
+			height: 397px;
+			position: absolute;
+			right: -159px;
+			top: -218px;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	@media (max-width: 767px) {
+		.blockImage {
+			&::before {
+				background-image: url("/img/yuzu-mob.png");
+				height: 174px;
+				position: absolute;
+				right: 0;
+				top: -55px;
+				width: 84px;
+				z-index: 1;
+			}
+		}
+
+        p {
+            font-size: 14px;
         }
-    }
 
-    p {
-        font-size: 18px;
-    }
+        a {
+            display: block;
+            text-align: center;
+        }
+	}
 }

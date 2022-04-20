@@ -8,17 +8,17 @@ const BlockTextThird = () => {
 			<section className={`${styles.blockTextThird} mt-5 pt-5`}>
 				<div className="container">
 					<div className="row align-items-center">
-						<div className="col-12 col-sm-12 col-md-6">
+						<div className="col-12 col-sm-12 col-md-6 px-4 px-md-5">
 							<Image
 								src="/img/image-women.png"
 								width="578"
 								height="640"
-								layout="fixed"
+								layout="responsive"
 							/>
 						</div>
-						<div className="col-12 col-sm-12 col-md-6">
+						<div className="col-12 col-sm-12 col-md-6 mt-5 px-4 mt-md-0 pt-4 pt-md-0 px-md-0">
 							<div className="row">
-								<div className="col-12 col-sm-12 col-md-6">
+								<div className="col-6 col-sm-6 col-md-6">
 									<div
 										className={`${styles.blockText} ${styles.blockIconEstrogen}`}
 									>
@@ -35,7 +35,7 @@ const BlockTextThird = () => {
 										<h5>Drug Free</h5>
 									</div>
 								</div>
-								<div className="col-12 col-sm-12 col-md-6">
+								<div className="col-6 col-sm-6 col-md-6">
 									<div
 										className={`${styles.blockText} ${styles.variant} ${styles.blockIconArtificial}`}
 									>
