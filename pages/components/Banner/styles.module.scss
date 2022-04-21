@@ -4,9 +4,10 @@
 	align-items: center;
 	background-color: $primary-color;
 	display: flex;
-	height: 460px;
+	height: auto;
 	position: relative;
 	width: 100%;
+	padding-bottom: 100px;
 
 	p {
 		padding: 0 25px 0 0;

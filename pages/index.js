@@ -4,9 +4,8 @@ import BlockAbout from "./components/BlockAbout";
 import BlockTextOne from "./components/BlockTextOne";
 import BlockTextThird from "./components/BlockTextThird";
 import BlockTextTwo from "./components/BlockTextTwo";
-import Brands from "./components/Brands";
+import BlockTextFour from "./components/BlockTextFour";
 import CustomerFavorites from "./components/CustomerFavorites";
-import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 
 const Home = () => {
@@ -15,11 +14,10 @@ const Home = () => {
 			<Banner />
 			<BlockTextOne />
 			<BlockTextTwo />
-			<Brands />
+			<BlockTextFour />
 			<CustomerFavorites />
 			<BlockTextThird />
 			<BlockAbout />
-			<Footer />
 		</Layout>
 	);
 };
