@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./styles.module.scss";
 
-const BlockTextThird = () => {
+const BlockTextThird = ({info}) => {
 	return (
 		<>
 			<section className={`${styles.blockTextThird} mt-5 pt-5`}>
@@ -10,7 +10,7 @@ const BlockTextThird = () => {
 					<div className="row align-items-center">
 						<div className="col-12 col-sm-12 col-md-6 px-4 px-md-5">
 							<Image
-								src="/img/image-women.png"
+								src={info.image}
 								width="578"
 								height="640"
 								layout="responsive"

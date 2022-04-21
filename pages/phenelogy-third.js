@@ -8,24 +8,25 @@ import BlockTextFour from "./components/BlockTextFour";
 import CustomerFavorites from "./components/CustomerFavorites";
 import Layout from "./components/Layout";
 
-const Home = () => {
+const PhenelogyThird = () => {
 	const bannerInfo = {
-		title: "Science-backed, naturally-sourced menopause relief",
-		text: "Phenology helps women feel their best with a scientifically proven, holistic approach to understanding and managing menopause, naturally.",
-		layout: "phenelogy-first",
+		title: "Holistic solutions, backed by science",
+		text: "Phenology helps women feel their best with a scientifically proven, holistic approach to understanding and managing menopause, naturally",
+		layout: "phenelogy-third",
 		buttonText: "Learn More",
 		buttonLink: "/",
-		backgroundColor: "backgound-primary",
-		whiteTextColor: true,
+		backgroundColor: "backgound-third",
+		whiteTextColor: false,
 	};
 
 	const blockTextOneInfo = {
-		backgroundColor: "background-second",
-		iconColor: "#4F0D31",
+		backgroundColor: "background-gold",
+		iconColor: "#464E0A",
+		textIconColor: "gold",
 	};
 
 	const blockTextThird = {
-		image: "/img/image-women.png",
+		image: "/img/image-women-3.png",
 	};
 
 	return (
@@ -41,4 +42,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default PhenelogyThird;

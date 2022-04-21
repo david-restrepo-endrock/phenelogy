@@ -2,45 +2,72 @@
 
 .banner {
 	align-items: center;
-	background-color: $primary-color;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
-	height: auto;
-	position: relative;
 	width: 100%;
-	padding-bottom: 100px;
+	height: 688px;
+
+	&.phenelogy-first {
+		background-color: $primary-color;
+		position: relative;
+
+		&::before {
+			background-image: url("/img/image-hero.png");
+			background-position: right;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: "";
+			height: 579px;
+			max-width: 836px;
+			position: absolute;
+			right: 0;
+			top: 178px;
+			width: 100%;
+		}
+	}
+
+	&.phenelogy-two {
+		background-image: url("/img/hero-banner-2.png");
+	}
+
+	&.phenelogy-third {
+		background-image: url("/img/hero-banner-3.png");
+	}
 
 	p {
 		padding: 0 25px 0 0;
 	}
 
-	&::before {
-		background-image: url("/img/image-hero.png");
-		background-repeat: no-repeat;
-		background-size: contain;
-		content: "";
-		height: 583px;
-		max-width: 836px;
-		position: absolute;
-		right: 0;
-		top: -27px;
-		width: 100%;
-	}
-
 	@media (max-width: 767px) {
 		align-items: flex-start;
-		height: 525px;
-		padding-top: 60px;
+		
 
-		&::before {
-			background-image: url("/img/banner-mobile.png");
-			bottom: 0;
-			height: 362px;
-			left: 0;
-			margin: 0 auto;
-			max-width: 308px;
-			right: 0;
-			top: 367px;
-			width: 100%;
+		&.phenelogy-first {
+			height: 438px;
+
+			&::before {
+				background-image: url("/img/banner-mobile.png");
+				bottom: 0;
+				height: 341px;
+				left: 0;
+				margin: 0 auto;
+				max-width: 308px;
+				right: 0;
+				top: 301px;
+				width: 100%;
+			}
+		}
+
+		&.phenelogy-two {
+			background-image: url("/img/hero-banner-2-mob.png");
+			height: 600px;
+		}
+
+		&.phenelogy-third {
+			background-image: url("/img/hero-banner-3-mob.png");
+			height: 600px;
 		}
 	}
 }

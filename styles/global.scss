@@ -48,6 +48,14 @@ h4 {
 		color: $white-color;
 	}
 
+	&.gold {
+		color: $gold-color-text;
+	}
+
+	&.green {
+		color: $primary-color;
+	}
+
 	&.bold {
 		font-family: $font-grotesque-bold;
 		font-weight: 900;
@@ -113,8 +121,7 @@ span {
 	}
 }
 
-
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 	h1 {
 		font-size: 32px;
 		line-height: 40px;
@@ -138,5 +145,4 @@ span {
 			padding: 16px 24px;
 		}
 	}
-
 }
