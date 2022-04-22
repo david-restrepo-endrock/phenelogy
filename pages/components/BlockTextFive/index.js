@@ -13,8 +13,8 @@ const BlockTextFive = ({ info }) => {
 				<div
 					className={`${styles.blockContent} ${styles[showImage]}`}
 				>
-					<div className="container">
-						<div className="row">
+					<div className="container h-100">
+						<div className="row align-content-between h-100">
 							<div className="col-12">
 								<div className={styles.blockBrands}>
 									<h2 className="text-center mb-4">As Seen In</h2>
@@ -22,14 +22,8 @@ const BlockTextFive = ({ info }) => {
 								</div>
 							</div>
 							{info.showCompleteBlock && (
-								<div className="col-12 col-sm-12 col-md-8">
+								<div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
 									<div className={styles.block}>
-										<img
-											src="/img/symptom.png"
-											width="100%"
-											className="d-md-none"
-											alt=""
-										/>
 										<div className={styles.text}>
 											<h2>
 												Need help deciding what product is right for you?{" "}
