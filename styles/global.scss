@@ -109,10 +109,11 @@ a {
 	}
 }
 
-span {
-	font-family: $font-grotesque-regular;
+.btn {
+	font-family: $font-grotesque-bold;
 	font-weight: 900;
 	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 @media (min-width: 1440px) {
@@ -140,10 +141,7 @@ span {
 		font-size: 14px;
 	}
 
-	a {
-		&.button-primary {
-			font-size: 14px;
-			padding: 16px 24px;
-		}
+	.btn {
+		font-size: 14px;
 	}
 }
