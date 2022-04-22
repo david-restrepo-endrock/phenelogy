@@ -21,112 +21,44 @@
 		border: 1px solid $four-color;
 		margin-bottom: 30px;
 		padding: 30px;
+		position: relative;
+
+		span {
+			position: absolute;
+			left: -14px;
+			top: -14px;
+		}
 
 		&.variant {
 			background-color: transparent;
 		}
+	}
 
-		&.blockIconEstrogen {
-			position: relative;
-
-			&::before {
-				background-image: url("/img/estrogen-free.png");
-				background-repeat: no-repeat;
-				background-size: contain;
-				content: "";
-				height: 48px;
-				left: -16px;
-				position: absolute;
-				top: -21px;
-				width: 48px;
-			}
+	@media (min-width: 768px) and (max-width: 1000px) {
+		&::after {
+			height: 100%;
+			top: 0;
 		}
 
-		&.blockIconUsa {
-			position: relative;
+		.blockText {
+			padding: 15px;
 
-			&::before {
-				background-image: url("/img/usa.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				content: "";
-				height: 48px;
-				left: -16px;
-				position: absolute;
-				top: -10px;
-				width: 48px;
-			}
-		}
+			span {
+				left: -8px;
+				top: -11px;
 
-		&.blockIconDrugFree {
-			position: relative;
-
-			&::before {
-				background-image: url("/img/drug-free.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				content: "";
-				height: 42px;
-				left: -16px;
-				position: absolute;
-				top: -10px;
-				width: 42px;
-			}
-		}
-
-		&.blockIconArtificial {
-			position: relative;
-
-			&::before {
-				background-image: url("/img/no-artificial-dyes.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				content: "";
-				height: 44px;
-				left: -16px;
-				position: absolute;
-				top: -10px;
-				width: 34px;
-			}
-		}
-
-		&.blockIconFreeShipping {
-			position: relative;
-
-			&::before {
-				background-image: url("/img/free-shipping.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				content: "";
-				height: 38px;
-				left: -16px;
-				position: absolute;
-				top: -10px;
-				width: 38px;
-			}
-		}
-
-		&.blockIconScience {
-			position: relative;
-
-			&::before {
-				background-image: url("/img/science-backed.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				content: "";
-				height: 45px;
-				left: -16px;
-				position: absolute;
-				top: -10px;
-				width: 42px;
+				svg {
+					width: 26px;
+					height: 26px;
+				}
 			}
 		}
 	}
 
 	@media (max-width: 767px) {
 		&::after {
-			height: 404px;
-			top: 26px;
+			height: 56%;
+			top: 0;
 		}
 
 		.blockText {
@@ -136,45 +68,13 @@
 				margin: 0;
 			}
 
-			&.blockIconEstrogen {
-				&::before {
-					width: 32px;
-					height: 32px;
-				}
-			}
+			span {
+				left: -8px;
+				top: -11px;
 
-			&.blockIconUsa {
-				&::before {
-					width: 30px;
-					height: 27px;
-				}
-			}
-
-			&.blockIconDrugFree {
-				&::before {
-					width: 28px;
-					height: 28px;
-				}
-			}
-
-			&.blockIconArtificial {
-				&::before {
-					width: 22px;
-					height: 29px;
-				}
-			}
-
-			&.blockIconFreeShipping {
-				&::before {
-					width: 25px;
-					height: 25px;
-				}
-			}
-
-			&.blockIconScience {
-				&::before {
-					width: 28px;
-					height: 30px;
+				svg {
+					width: 26px;
+					height: 26px;
 				}
 			}
 		}

@@ -6,10 +6,10 @@ const CustomerFavorites = () => {
 	return (
 		<>
 			<section className="my-5">
-				<div className="container-fluid">
+				<h2 className="text-center mb-5 mt-3">Customer Favorites</h2>
+				<div className={`container-fluid ${styles.customerFavorites}`}>
 					<div className="row">
 						<div className="col-12 col-sm-12 col-md-12">
-							<h2 className="text-center mb-5">Customer Favorites</h2>
 							<ul className={styles.card}>
 								<li>
 									<div className={styles.item}>
@@ -138,11 +138,11 @@ const CustomerFavorites = () => {
 									</div>
 								</li>
 							</ul>
-							<div className="text-center d-block">
-								<Button text="Shop All" />
-							</div>
 						</div>
 					</div>
+				</div>
+				<div className="text-center d-block">
+					<Button text="Shop All" />
 				</div>
 			</section>
 		</>

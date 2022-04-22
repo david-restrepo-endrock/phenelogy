@@ -12,7 +12,7 @@ const Brands = () => {
 							src="/img/itg.png"
 							width="252"
 							height="92"
-							layout="fixed"
+							
 							alt="Brand In The Groove"
 						/>
 					</div>
@@ -21,7 +21,7 @@ const Brands = () => {
 							src="/img/well-good.png"
 							width="252"
 							height="18"
-							layout="fixed"
+							
 							alt="Brand Well Good"
 						/>
 					</div>
@@ -30,7 +30,7 @@ const Brands = () => {
 							src="/img/allure.png"
 							width="111"
 							height="40"
-							layout="fixed"
+							
 							alt="Brand Allure"
 						/>
 					</div>

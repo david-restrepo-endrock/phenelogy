@@ -1,34 +1,16 @@
 @import "../../../styles/vars";
 
 .wavyPlantImage {
-	position: relative;
-	height: 1px;
-
-	&::before {
-		background-image: url("/img/wavy-plant.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		content: "";
-		height: 500px;
-		left: 0;
-		margin: 0 auto;
-		position: absolute;
-		right: 0;
-		width: 100%;
-		top: -99px;
-
-		@media (max-width: 767px) {
-			background-image: url("/img/wavy-plant-mob-2.png");
-			height: 400px;
+	@media (max-width: 767px) {
+		img {
+			position: relative;
+			top: 51px;
 		}
 	}
 }
 
 .footer {
 	background-color: $dark-color;
-	margin-top: 400px;
-
 
 	.item {
 		border-top: 1px solid;
@@ -53,15 +35,18 @@
 		p {
 			font-size: 10px;
 			line-height: 14px;
-			color: #ABABAB;
+			color: #ababab;
 			padding: 0 60px 0 0;
 		}
 	}
 
-	@media(max-width: 767px) {
+	@media (min-width: 768px) and (max-width: 1000px) {
+		.item {
+			padding: 50px;
+		}
+	}
 
-		margin-top: 200px;
-
+	@media (max-width: 767px) {
 		.item {
 			padding: 22px 30px 22px;
 

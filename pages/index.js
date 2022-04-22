@@ -22,6 +22,7 @@ const Home = () => {
 	const blockTextOneInfo = {
 		backgroundColor: "background-second",
 		iconColor: "#4F0D31",
+		isFirstLanding: true
 	};
 
 	const blockTextThird = {

@@ -23,6 +23,7 @@ const PhenelogyTwo = () => {
 		backgroundColor: "background-green",
 		iconColor: "#00552B",
 		textIconColor: "green",
+		isFirstLanding: false
 	};
 
 	const blockTextThird = {
@@ -37,7 +38,7 @@ const PhenelogyTwo = () => {
 			<BlockTextFour />
 			<CustomerFavorites />
 			<BlockTextThird info={blockTextThird} />
-			<BlockAbout />
+			<BlockAbout /> 
 		</Layout>
 	);
 };

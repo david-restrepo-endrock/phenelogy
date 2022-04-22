@@ -5,16 +5,17 @@
 		position: relative;
 
 		&::before {
-			background-image: url("/img/yuzu.png");
+			background-image: url("/img/yuzu-mob.png");
 			background-repeat: no-repeat;
 			background-size: contain;
 			content: "";
-			height: 397px;
+			height: 100%;
 			position: absolute;
-			right: -159px;
+			right: 0;
 			top: -218px;
 			width: 100%;
 			z-index: 1;
+			max-width: 174px;
 		}
 	}
 
@@ -22,7 +23,7 @@
 		font-size: 18px;
 	}
 
-	@media (max-width: 767px) {
+	@media (max-width: 1000px) {
 		.blockImage {
 			&::before {
 				background-image: url("/img/yuzu-mob.png");
@@ -35,13 +36,13 @@
 			}
 		}
 
-        p {
-            font-size: 14px;
-        }
+		p {
+			font-size: 14px;
+		}
 
-        a {
-            display: block;
-            text-align: center;
-        }
+		a {
+			display: block;
+			text-align: center;
+		}
 	}
 }

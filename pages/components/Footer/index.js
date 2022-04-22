@@ -6,11 +6,14 @@ import styles from "./styles.module.scss";
 const Footer = () => {
 	return (
 		<>
-			<div className={styles.wavyPlantImage}></div>
+			<div className={styles.wavyPlantImage}>
+				<img src="/img/wavy-plant.png" width="100%" height="auto" className="d-none d-md-block"/>			
+				<img src="/img/wavy-plant-mob-2.png" width="100%" height="auto" className="d-md-none"/>			
+			</div>
 			<footer className={styles.footer}>
 				<div className="container-fluid">
 					<div className="row">
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<h2 className="white">Shop</h2>
 							<ul className="m-0 p-0">
 								<li>
@@ -40,7 +43,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<h2 className="white">Guidance</h2>
 							<ul className="m-0 p-0">
 								<li>
@@ -65,7 +68,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<h2 className="white">About</h2>
 							<ul className="m-0 p-0">
 								<li>
@@ -85,7 +88,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<ul className="m-0 p-0">
 								<li>
 									<Link href="/">
@@ -109,7 +112,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<ul className="m-0 p-0">
 								<li>
 									<Link href="/">
@@ -138,7 +141,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className={`col-6 col-sm-12 col-md-4 ${styles.item}`}>
+						<div className={`col-6 col-sm-6 col-md-4 ${styles.item}`}>
 							<div>
 								<p className="white">
 									These statements have not been evaluated by the Food and Drug

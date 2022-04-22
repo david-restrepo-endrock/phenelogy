@@ -23,6 +23,7 @@ const PhenelogyThird = () => {
 		backgroundColor: "background-gold",
 		iconColor: "#464E0A",
 		textIconColor: "gold",
+		isFirstLanding: false,
 	};
 
 	const blockTextThird = {

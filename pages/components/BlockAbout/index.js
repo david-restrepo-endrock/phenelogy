@@ -16,7 +16,7 @@ const BlockAbout = () => {
 						</div>
 					</div>
 					<div className={`row ${styles.blockImages}`}>
-						<div className="col-12 col-sm-4 col-md-4 mb-5 mb-md-0">
+						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
 							<Image
 								src="/img/about-1.png"
 								width="329"
@@ -32,7 +32,7 @@ const BlockAbout = () => {
 								<a className="white">Learn more</a>
 							</Link>
 						</div>
-						<div className="col-12 col-sm-4 col-md-4 mb-5 mb-md-0">
+						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
 							<Image
 								src="/img/about-2.png"
 								width="329"
@@ -48,7 +48,7 @@ const BlockAbout = () => {
 								<a className="white">meet the team</a>
 							</Link>
 						</div>
-						<div className="col-12 col-sm-4 col-md-4 mb-5 mb-md-0">
+						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
 							<Image
 								src="/img/about-3.png"
 								width="329"
