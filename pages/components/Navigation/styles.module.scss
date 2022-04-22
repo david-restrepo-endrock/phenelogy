@@ -1,0 +1,41 @@
+@import "../../../styles/vars";
+
+.nav {
+	background-color: $primary-color;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 40px;
+
+	.menu {
+		svg {
+			margin-right: 15px;
+			cursor: pointer;
+		}
+	}
+
+	.links {
+		li {
+			list-style: none;
+			margin: 0 13px;
+
+			a {
+				color: $white-color;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-family: $font-grotesque-bold;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 30px 20px;
+
+		.links {
+			.iconUser,
+			.link {
+				display: none;
+			}
+		}
+	}
+}

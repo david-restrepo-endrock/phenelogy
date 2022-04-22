@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer";
+import Navigation from "./Navigation";
 
 const Layout = ({ children, title }) => {
 	return (
@@ -14,6 +15,7 @@ const Layout = ({ children, title }) => {
 					crossorigin="anonymous"
 				/>
 			</Head>
+			<Navigation />
 			<div>{children}</div>
 			<Footer />
 		</>

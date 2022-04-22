@@ -68,6 +68,14 @@ h5 {
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: -0.02em;
+
+	&.white {
+		color: $white-color;
+	}
+
+	&.link {
+		font-family: $font-grotesque-regular;
+	}
 }
 
 p {
@@ -121,7 +129,6 @@ a {
 		max-width: 1140px !important;
 	}
 }
-
 
 @media (max-width: 1200px) {
 	h1 {

@@ -1,0 +1,111 @@
+@import "../../../../styles/vars";
+
+.drawer {
+	background-color: $dark-color;
+	display: grid;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 381px;
+	z-index: 100;
+	padding: 30px;
+	left: -400px;
+	transition: 0.5s;
+
+	&.open {
+		left: 0;
+		transition: 0.5s;
+	}
+
+	svg {
+		cursor: pointer;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+
+			h2 {
+				cursor: pointer;
+				transition: 0.5s;
+				svg {
+					display: none;
+				}
+
+				&:hover {
+					margin-left: 20px;
+					transition: 0.5s;
+
+					svg {
+						display: inline;
+						margin-right: 10px;
+						transition: 0.5s;
+					}
+				}
+			}
+
+			h4 {
+				font-size: 24px;
+				font-weight: 400;
+				cursor: pointer;
+			}
+
+			h5 {
+				font-size: 16px;
+				font-weight: 400;
+				cursor: pointer;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		left: -1400px;
+		width: 100%;
+        padding: 30px 0 10px;
+
+        img {
+            padding: 0 30px;
+        }
+
+        ul, i {
+            padding: 0 30px;
+        }
+
+		.footerLinks {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+
+			span {
+				border-top: 1px solid;
+				width: 100%;
+				padding: 15px 10px;
+				text-align: center;
+
+				a {
+					color: $white-color;
+					text-decoration: none;
+					font-family: $font-grotesque-regular;
+					font-size: 16px;
+				}
+
+				&:last-child {
+
+                    svg {
+                        margin-left: 15px;
+                    }
+
+					a {
+                        text-transform: uppercase;
+                        font-family: $font-grotesque-bold;
+                    }
+				}
+			}
+		}
+	}
+}
