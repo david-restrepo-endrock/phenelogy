@@ -36,6 +36,18 @@
 		background-image: url("/img/hero-banner-3.png");
 	}
 
+	&.phenelogy-four {
+		background-image: url("/img/hero-banner-4.png");
+	}
+
+	&.phenelogy-five {
+		background-image: url("/img/hero-banner-5.png");
+	}
+
+	&.phenelogy-six {
+		background-image: url("/img/hero-banner-6.png");
+	}
+
 	p {
 		padding: 0 25px 0 0;
 	}
@@ -68,6 +80,19 @@
 		&.phenelogy-third {
 			background-image: url("/img/hero-banner-3-mob.png");
 			height: 600px;
+		}
+
+		&.phenelogy-four {
+			background-image: url("/img/hero-banner-4-mob.png");
+			height: 700px;
+		}
+
+		&.phenelogy-five {
+			background-image: url("/img/hero-banner-5-mob.png");
+		}
+
+		&.phenelogy-six {
+			background-image: url("/img/hero-banner-6-mob.png");
 		}
 	}
 }

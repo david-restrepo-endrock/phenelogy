@@ -2,6 +2,33 @@
 
 .blockTextFive {
 	margin: 250px 0;
+	position: relative;
+
+	&::after {
+		background-image: url("/img/chamomile.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 297px;
+		max-width: 400px;
+		position: absolute;
+		top: -279px;
+		width: 100%;
+	}
+
+	&::before {
+		background-image: url("/img/chamomile-2.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 592px;
+		max-width: 220px;
+		position: absolute;
+		right: 0;
+		top: -290px;
+		width: 100%;
+		z-index: 1000;
+	}
 
 	.blockContent {
 		background-color: $second-color;
@@ -36,6 +63,19 @@
 			bottom: 0;
 		}
 
+		&.not-show-image {
+
+			height: 178px;
+
+			&::after {
+				display: none;
+			}
+
+			.blockBrands {
+				margin-top: -178px;
+			}
+		}
+
 		.block {
 			background-color: $five-color;
 			border-radius: 8px;
@@ -43,7 +83,7 @@
 			position: relative;
 			display: flex;
 			align-items: center;
-			
+
 			.text {
 				padding: 0 293px 0 56px;
 			}
@@ -72,6 +112,20 @@
 					padding: 40px 30px 60px;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&::after {
+			height: 104px;
+			max-width: 148px;
+			top: -103px;
+		}
+
+		&::before {
+			height: 397px;
+			max-width: 150px;
+			top: -156px;
 		}
 	}
 }

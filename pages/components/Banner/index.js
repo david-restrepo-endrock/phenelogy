@@ -13,8 +13,8 @@ const Banner = ({ info }) => {
 				<div className="row">
 					<div className="col-12 col-sm-12 col-md-5">
 						<div className="mb-5">
-							<h1 className={info.whiteTextColor && "white"}>{info.title}</h1>
-							<p className={info.whiteTextColor && "white"}>{info.text}</p>
+							<h1 className={info.whiteTextColor ? "white" : undefined}>{info.title}</h1>
+							<p className={info.whiteTextColor ? "white" : undefined}>{info.text}</p>
 						</div>
 						<Button text={info.buttonText} link={info.buttonLink} />
 					</div>
