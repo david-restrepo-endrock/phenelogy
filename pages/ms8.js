@@ -7,30 +7,36 @@ import BlockTextTwo from "./components/BlockTextTwo";
 import BlockTextFour from "./components/BlockTextFour";
 import CustomerFavorites from "./components/CustomerFavorites";
 import Layout from "./components/Layout";
-import { getData } from "../utils/utils";
 
-const PhenelogyTwo = () => {
+const PhenelogyEight = ({ info }) => {
 	const [data, setData] = useState(undefined);
 
 	useEffect(() => {
-		getData("ms2").then((response) => setData(response[0]["ms2"]));
+		setData(info[0].ms2);
 	}, []);
 
 	return (
 		<Layout title="Menopause">
-			{data !== undefined && (
-				<>
-					<Banner info={data.banner} />
-					<BlockTextOne info={data.blockTextOneInfo} />
-					<BlockTextTwo info={data.blockTextTwoInfo} />
-					<BlockTextFour />
-					<CustomerFavorites info={data.customerFavorite} />
-					<BlockTextThird info={data.blockTextThird} />
-					<BlockAbout info={data.blockAbout} />
-				</>
-			)}
+			<Banner info={data?.banner} />
+			<BlockTextOne info={data?.blockTextOneInfo} />
+			<BlockTextTwo info={data?.blockTextTwoInfo} />
+			<BlockTextFour />
+			<CustomerFavorites info={data?.customerFavorite} />
+			<BlockTextThird info={data?.blockTextThird} />
+			<BlockAbout info={data?.blockAbout} />
 		</Layout>
 	);
 };
 
-export default PhenelogyTwo;
+export async function getServerSideProps() {
+	const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data.json`);
+	const data = await response.json();
+
+	return {
+		props: {
+			info: data,
+		},
+	};
+}
+
+export default PhenelogyEight;

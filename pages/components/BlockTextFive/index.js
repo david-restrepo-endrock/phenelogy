@@ -4,7 +4,7 @@ import Button from "../Buttons";
 import Brands from "../Brands";
 
 const BlockTextFive = ({ info }) => {
-	const showImage = info.showCompleteBlock == false && `not-show-image`;
+	const showImage = info?.showCompleteBlock == false && `not-show-image`;
 
 	return (
 		<>
@@ -18,7 +18,7 @@ const BlockTextFive = ({ info }) => {
 									<Brands />
 								</div>
 							</div>
-							{info.showCompleteBlock && (
+							{info?.showCompleteBlock && (
 								<div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
 									<div className={styles.block}>
 										<div className={styles.text}>
@@ -30,7 +30,7 @@ const BlockTextFive = ({ info }) => {
 												recommendations, track your journey and plan for what’s
 												ahead.
 											</p>
-											<Button text={info.buttonText} link={info.buttonLink} />
+											<Button text={info?.buttonText} link={info?.buttonLink} />
 										</div>
 									</div>
 								</div>

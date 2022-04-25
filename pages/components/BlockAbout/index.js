@@ -28,9 +28,11 @@ const BlockAbout = ({ info }) => {
 								Phenology combines product, coaching, and at-home diagnostics so
 								you receive a menopause plan tailored to you.
 							</p>
-							<Link href={info.post1.buttonLink}>
-								<a className="white">{info.post1.buttonText}</a>
-							</Link>
+							{info !== undefined && (
+								<Link href={info.post1.buttonLink}>
+									<a className="white">{info.post1.buttonText}</a>
+								</Link>
+							)}
 						</div>
 						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
 							<Image
@@ -44,9 +46,11 @@ const BlockAbout = ({ info }) => {
 								Phenology is a women-led collective of doctors, scientists, and
 								advisors improving women’s health and wellness.
 							</p>
-							<Link href={info.post2.buttonLink}>
-								<a className="white">{info.post2.buttonText}</a>
-							</Link>
+							{info !== undefined && (
+								<Link href={info.post2.buttonLink}>
+									<a className="white">{info.post2.buttonText}</a>
+								</Link>
+							)}
 						</div>
 						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
 							<Image
@@ -60,9 +64,11 @@ const BlockAbout = ({ info }) => {
 								Phenology delivers the insights and facts you need to make the
 								most of your menopause journey.
 							</p>
-							<Link href={info.post3.buttonLink}>
-								<a className="white">{info.post3.buttonText}</a>
-							</Link>
+							{info !== undefined && (
+								<Link href={info.post3.buttonLink}>
+									<a className="white">{info.post3.buttonText}</a>
+								</Link>
+							)}
 						</div>
 					</div>
 				</div>

@@ -3,28 +3,34 @@ import Banner from "./components/Banner";
 import BlockTextFive from "./components/BlockTextFive";
 import CustomerFavorites from "./components/CustomerFavorites";
 import Layout from "./components/Layout";
-import { getData } from "../utils/utils";
 
-const PhenelogySix = () => {
+const PhenelogyTwelve = ({ info }) => {
 	const [data, setData] = useState(undefined);
 
 	useEffect(() => {
-		getData("ms6").then((response) => setData(response[0]["ms6"]));
+		setData(info[0].ms6);
 	}, []);
 
 	return (
 		<>
-			<Layout title={"Comprehensive - Retargeting"}>
-				{data !== undefined && (
-					<>
-						<Banner info={data.banner} />
-						<CustomerFavorites info={data.customerFavorite} />
-						<BlockTextFive info={data.blockTextFive} />
-					</>
-				)}
+			<Layout title={"Menopause - Retargeting"}>
+				<Banner info={data?.banner} />
+				<CustomerFavorites info={data?.customerFavorite} />
+				<BlockTextFive info={data?.blockTextFive} />
 			</Layout>
 		</>
 	);
 };
 
-export default PhenelogySix;
+export async function getServerSideProps() {
+	const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data.json`);
+	const data = await response.json();
+
+	return {
+		props: {
+			info: data,
+		},
+	};
+}
+
+export default PhenelogyTwelve;

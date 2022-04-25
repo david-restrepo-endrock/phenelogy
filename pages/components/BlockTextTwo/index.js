@@ -31,7 +31,7 @@ const BlockTextTwo = ({ info }) => {
 										ahead.
 									</p>
 								</div>
-								<Button text={info.buttonText} link={info.buttonLink} />
+								<Button text={info?.buttonText} link={info?.buttonLink} />
 							</div>
 						</div>
 					</div>

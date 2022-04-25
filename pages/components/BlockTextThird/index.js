@@ -9,7 +9,9 @@ const BlockTextThird = ({ info }) => {
 				<div className="container">
 					<div className="row align-items-center">
 						<div className="col-12 col-sm-12 col-md-6 px-4 px-md-5">
-							<Image src={info.image} width="578" height="640" />
+							{info !== undefined && (
+								<Image src={info?.image} width="578" height="640" />
+							)}
 						</div>
 						<div className="col-12 col-sm-12 col-md-6 mt-5 px-4 mt-md-0 pt-md-0 px-md-0">
 							<div className="row">

@@ -30,7 +30,7 @@ const CustomerFavorites = ({ info }) => {
 										<div className={styles.info}>
 											<div className={styles.title}>
 												<h2>Morning and Evening Gummy Duo Supplements</h2>
-												<Button text={info.first.buttonText} link={info.first.buttonLink} />
+												<Button text={info?.first.buttonText} link={info?.first.buttonLink} />
 											</div>
 											<div className={styles.tags}>
 												<h4>Hot flashes</h4>
@@ -39,7 +39,7 @@ const CustomerFavorites = ({ info }) => {
 												<h4>Brain fog</h4>
 											</div>
 											<div className="d-md-none">
-												<Button text={info.first.buttonText} link={info.first.buttonLink} />
+												<Button text={info?.first.buttonText} link={info?.first.buttonLink} />
 											</div>
 										</div>
 									</div>
@@ -63,14 +63,14 @@ const CustomerFavorites = ({ info }) => {
 										<div className={styles.info}>
 											<div className={styles.title}>
 												<h2>Daily Glow Facial Cream</h2>
-												<Button text={info.second.buttonText} link={info.second.buttonLink} />
+												<Button text={info?.second.buttonText} link={info?.second.buttonLink} />
 											</div>
 											<div className={styles.tags}>
 												<h4>Skin hydration</h4>
 												<h4>Anti-aging</h4>
 											</div>
 											<div className="d-md-none">
-												<Button text={info.second.buttonText} link={info.second.buttonLink} />
+												<Button text={info?.second.buttonText} link={info?.second.buttonLink} />
 											</div>
 										</div>
 									</div>
@@ -94,14 +94,14 @@ const CustomerFavorites = ({ info }) => {
 										<div className={styles.info}>
 											<div className={styles.title}>
 												<h2>Cooling Mist Skin Soothing Atomizer</h2>
-												<Button text={info.third.buttonText} link={info.third.buttonLink} />
+												<Button text={info?.third.buttonText} link={info?.third.buttonLink} />
 											</div>
 											<div className={styles.tags}>
 												<h4>Hot flashes </h4>
 												<h4>Night sweats </h4>
 											</div>
 											<div className="d-md-none">
-												<Button text={info.third.buttonText} link={info.third.buttonLink} />
+												<Button text={info?.third.buttonText} link={info?.third.buttonLink} />
 											</div>
 										</div>
 									</div>
@@ -125,14 +125,14 @@ const CustomerFavorites = ({ info }) => {
 										<div className={styles.info}>
 											<div className={styles.title}>
 												<h2>Lucid Lift Clarity Mints</h2>
-												<Button text={info.fourth.buttonText} link={info.fourth.buttonLink} />
+												<Button text={info?.fourth.buttonText} link={info?.fourth.buttonLink} />
 											</div>
 											<div className={styles.tags}>
 												<h4>Brain fog</h4>
 												<h4>Fatigue</h4>
 											</div>
 											<div className="d-md-none">
-												<Button text={info.fourth.buttonText} link={info.fourth.buttonLink} />
+												<Button text={info?.fourth.buttonText} link={info?.fourth.buttonLink} />
 											</div>
 										</div>
 									</div>
@@ -142,7 +142,7 @@ const CustomerFavorites = ({ info }) => {
 					</div>
 				</div>
 				<div className="text-center d-block">
-					<Button text={info.buttonText} link={info.buttonText} />
+					<Button text={info?.buttonText} link={info?.buttonText} />
 				</div>
 			</section>
 		</>
