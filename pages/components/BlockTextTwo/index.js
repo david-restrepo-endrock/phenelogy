@@ -3,8 +3,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Button from "../Buttons";
 
-
-const BlockTextTwo = () => {
+const BlockTextTwo = ({ info }) => {
 	return (
 		<>
 			<section className={styles.blockTextTwo}>
@@ -32,7 +31,7 @@ const BlockTextTwo = () => {
 										ahead.
 									</p>
 								</div>
-								<Button text="Take Assessment" />
+								<Button text={info.buttonText} link={info.buttonLink} />
 							</div>
 						</div>
 					</div>

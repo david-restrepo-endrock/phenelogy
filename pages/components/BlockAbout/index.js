@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.scss";
 
-const BlockAbout = () => {
+const BlockAbout = ({ info }) => {
 	return (
 		<>
 			<section className={`${styles.blockAbout}`}>
@@ -28,8 +28,8 @@ const BlockAbout = () => {
 								Phenology combines product, coaching, and at-home diagnostics so
 								you receive a menopause plan tailored to you.
 							</p>
-							<Link href="/">
-								<a className="white">Learn more</a>
+							<Link href={info.post1.buttonLink}>
+								<a className="white">{info.post1.buttonText}</a>
 							</Link>
 						</div>
 						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
@@ -44,8 +44,8 @@ const BlockAbout = () => {
 								Phenology is a women-led collective of doctors, scientists, and
 								advisors improving women’s health and wellness.
 							</p>
-							<Link href="/">
-								<a className="white">meet the team</a>
+							<Link href={info.post2.buttonLink}>
+								<a className="white">{info.post2.buttonText}</a>
 							</Link>
 						</div>
 						<div className="col-12 col-sm-12 col-md-4 mb-5 mb-md-0">
@@ -60,8 +60,8 @@ const BlockAbout = () => {
 								Phenology delivers the insights and facts you need to make the
 								most of your menopause journey.
 							</p>
-							<Link href="/">
-								<a className="white">Read Now</a>
+							<Link href={info.post3.buttonLink}>
+								<a className="white">{info.post3.buttonText}</a>
 							</Link>
 						</div>
 					</div>

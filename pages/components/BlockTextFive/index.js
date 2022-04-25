@@ -4,15 +4,12 @@ import Button from "../Buttons";
 import Brands from "../Brands";
 
 const BlockTextFive = ({ info }) => {
-
 	const showImage = info.showCompleteBlock == false && `not-show-image`;
 
 	return (
 		<>
 			<section className={styles.blockTextFive}>
-				<div
-					className={`${styles.blockContent} ${styles[showImage]}`}
-				>
+				<div className={`${styles.blockContent} ${styles[showImage]}`}>
 					<div className="container h-100">
 						<div className="row align-content-between h-100">
 							<div className="col-12">
@@ -33,7 +30,7 @@ const BlockTextFive = ({ info }) => {
 												recommendations, track your journey and plan for what’s
 												ahead.
 											</p>
-											<Button text="Take the Assessment" />
+											<Button text={info.buttonText} link={info.buttonLink} />
 										</div>
 									</div>
 								</div>

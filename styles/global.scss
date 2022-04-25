@@ -93,6 +93,9 @@ p {
 }
 
 a {
+
+	text-decoration: none;
+
 	&.white {
 		color: $white-color;
 	}

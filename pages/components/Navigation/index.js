@@ -30,23 +30,31 @@ const Navigation = () => {
 							/>
 						</svg>
 					</div>
-					<img
-						src="/img/logo.png"
-						width="100%"
-						className="d-none d-md-block"
-						height="21"
-					/>
+					<Link href="https://www.myphenology.com/">
+						<a target="_blank">
+							<img
+								src="/img/logo.png"
+								width="100%"
+								className="d-none d-md-block"
+								height="21"
+							/>
+						</a>
+					</Link>
 				</div>
 				<div className="d-md-none">
-					<img src="/img/logo.png" width="100%" height="21" />
+					<Link href="https://www.myphenology.com/">
+						<a target="_blank">
+							<img src="/img/logo.png" width="100%" height="21" />
+						</a>
+					</Link>
 				</div>
 				<div>
 					<ul
 						className={`m-0 p-0 d-md-flex align-items-center ${styles.links}`}
 					>
 						<li>
-							<Link href="/">
-								<a>
+							<Link href="https://www.myphenology.com/cart">
+								<a target="_blank">
 									<svg
 										width="32"
 										height="32"
@@ -65,8 +73,8 @@ const Navigation = () => {
 							</Link>
 						</li>
 						<li>
-							<Link href="/">
-								<a>
+							<Link href="https://www.myphenology.com/sign-in">
+								<a target="_blank">
 									<svg
 										width="32"
 										height="32"
@@ -90,8 +98,8 @@ const Navigation = () => {
 							</Link>
 						</li>
 						<li>
-							<Link href="/">
-								<a className={styles.link}> take the assessment</a>
+							<Link href="https://www.myphenology.com/assessment">
+								<a className={styles.link} target="_blank"> take the assessment</a>
 							</Link>
 						</li>
 					</ul>

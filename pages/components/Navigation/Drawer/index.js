@@ -8,13 +8,17 @@ const Drawer = ({ showDrawer, handleDrawer }) => {
 			<div className={`${styles.drawer} ${showDrawer && styles.open} `}>
 				<div className="d-flex justify-content-between d-md-none">
 					<div>
-						<img src="/img/logo.png" width="200" height="auto" />
+						<Link href="https://www.myphenology.com/">
+							<a target="_blank">
+								<img src="/img/logo.png" width="200" height="auto" />
+							</a>
+						</Link>
 					</div>
 					<div>
 						<ul className="m-0 d-flex">
 							<li>
-								<Link href="/">
-									<a>
+								<Link href="https://www.myphenology.com/cart">
+									<a target="_blank">
 										<svg
 											width="32"
 											height="32"
@@ -33,25 +37,21 @@ const Drawer = ({ showDrawer, handleDrawer }) => {
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
-									<a>
-										<svg
-											width="32"
-											height="32"
-											viewBox="0 0 32 32"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-                                            onClick={(e) => handleDrawer()}
-										>
-											<path
-												fillRule="evenodd"
-												clipRule="evenodd"
-												d="M7.7071 6.29289C7.31658 5.90237 6.68342 5.90237 6.29289 6.29289C5.90237 6.68342 5.90237 7.31658 6.29289 7.7071L14.5858 16L6.29292 24.2929C5.9024 24.6834 5.9024 25.3166 6.29292 25.7071C6.68344 26.0976 7.31661 26.0976 7.70713 25.7071L16 17.4142L24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L17.4142 16L25.7071 7.70711C26.0976 7.31659 26.0976 6.68343 25.7071 6.2929C25.3166 5.90238 24.6834 5.90238 24.2929 6.2929L16 14.5858L7.7071 6.29289Z"
-												fill="white"
-											/>
-										</svg>
-									</a>
-								</Link>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									onClick={(e) => handleDrawer()}
+								>
+									<path
+										fillRule="evenodd"
+										clipRule="evenodd"
+										d="M7.7071 6.29289C7.31658 5.90237 6.68342 5.90237 6.29289 6.29289C5.90237 6.68342 5.90237 7.31658 6.29289 7.7071L14.5858 16L6.29292 24.2929C5.9024 24.6834 5.9024 25.3166 6.29292 25.7071C6.68344 26.0976 7.31661 26.0976 7.70713 25.7071L16 17.4142L24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L17.4142 16L25.7071 7.70711C26.0976 7.31659 26.0976 6.68343 25.7071 6.2929C25.3166 5.90238 24.6834 5.90238 24.2929 6.2929L16 14.5858L7.7071 6.29289Z"
+										fill="white"
+									/>
+								</svg>
 							</li>
 						</ul>
 					</div>
@@ -75,9 +75,9 @@ const Drawer = ({ showDrawer, handleDrawer }) => {
 				</i>
 				<ul>
 					<li>
-						<Link href="/">
-							<h2 className="white">
-								<a>
+						<Link href="https://www.myphenology.com/topics">
+							<a target="_blank">
+								<h2 className="white">
 									<svg
 										width="40"
 										height="19"
@@ -93,102 +93,106 @@ const Drawer = ({ showDrawer, handleDrawer }) => {
 										/>
 									</svg>
 									Editorial
-								</a>
-							</h2>
+								</h2>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h2 className="white">
-								<svg
-									width="40"
-									height="19"
-									viewBox="0 0 40 19"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fillRule="evenodd"
-										clipRule="evenodd"
-										d="M31.0092 0.763604C30.6577 0.412132 30.0879 0.412132 29.7364 0.763604C29.3849 1.11508 29.3849 1.68492 29.7364 2.0364L36.7 9.00003C36.6949 9.00001 36.6898 9 36.6846 9H1.31538C0.588917 9 0 9.22386 0 9.5C0 9.77614 0.588917 10 1.31538 10H36.6846C36.6898 10 36.6949 9.99999 36.7 9.99997L29.7364 16.9636C29.3849 17.3151 29.3849 17.8849 29.7364 18.2364C30.0879 18.5879 30.6577 18.5879 31.0092 18.2364L39.1092 10.1364C39.4607 9.78492 39.4607 9.21508 39.1092 8.8636L31.0092 0.763604Z"
-										fill="white"
-									/>
-								</svg>
-								<a>Shop</a>
-							</h2>
+						<Link href="https://www.myphenology.com/products">
+							<a target="_blank">
+								<h2 className="white">
+									<svg
+										width="40"
+										height="19"
+										viewBox="0 0 40 19"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fillRule="evenodd"
+											clipRule="evenodd"
+											d="M31.0092 0.763604C30.6577 0.412132 30.0879 0.412132 29.7364 0.763604C29.3849 1.11508 29.3849 1.68492 29.7364 2.0364L36.7 9.00003C36.6949 9.00001 36.6898 9 36.6846 9H1.31538C0.588917 9 0 9.22386 0 9.5C0 9.77614 0.588917 10 1.31538 10H36.6846C36.6898 10 36.6949 9.99999 36.7 9.99997L29.7364 16.9636C29.3849 17.3151 29.3849 17.8849 29.7364 18.2364C30.0879 18.5879 30.6577 18.5879 31.0092 18.2364L39.1092 10.1364C39.4607 9.78492 39.4607 9.21508 39.1092 8.8636L31.0092 0.763604Z"
+											fill="white"
+										/>
+									</svg>
+									Shop
+								</h2>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h2 className="white">
-								<svg
-									width="40"
-									height="19"
-									viewBox="0 0 40 19"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fillRule="evenodd"
-										clipRule="evenodd"
-										d="M31.0092 0.763604C30.6577 0.412132 30.0879 0.412132 29.7364 0.763604C29.3849 1.11508 29.3849 1.68492 29.7364 2.0364L36.7 9.00003C36.6949 9.00001 36.6898 9 36.6846 9H1.31538C0.588917 9 0 9.22386 0 9.5C0 9.77614 0.588917 10 1.31538 10H36.6846C36.6898 10 36.6949 9.99999 36.7 9.99997L29.7364 16.9636C29.3849 17.3151 29.3849 17.8849 29.7364 18.2364C30.0879 18.5879 30.6577 18.5879 31.0092 18.2364L39.1092 10.1364C39.4607 9.78492 39.4607 9.21508 39.1092 8.8636L31.0092 0.763604Z"
-										fill="white"
-									/>
-								</svg>
-								<a>MiniLab</a>
-							</h2>
+						<Link href="https://www.myphenology.com/minilab">
+							<a target="_blank">
+								<h2 className="white">
+									<svg
+										width="40"
+										height="19"
+										viewBox="0 0 40 19"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fillRule="evenodd"
+											clipRule="evenodd"
+											d="M31.0092 0.763604C30.6577 0.412132 30.0879 0.412132 29.7364 0.763604C29.3849 1.11508 29.3849 1.68492 29.7364 2.0364L36.7 9.00003C36.6949 9.00001 36.6898 9 36.6846 9H1.31538C0.588917 9 0 9.22386 0 9.5C0 9.77614 0.588917 10 1.31538 10H36.6846C36.6898 10 36.6949 9.99999 36.7 9.99997L29.7364 16.9636C29.3849 17.3151 29.3849 17.8849 29.7364 18.2364C30.0879 18.5879 30.6577 18.5879 31.0092 18.2364L39.1092 10.1364C39.4607 9.78492 39.4607 9.21508 39.1092 8.8636L31.0092 0.763604Z"
+											fill="white"
+										/>
+									</svg>
+									MiniLab
+								</h2>
+							</a>
 						</Link>
 					</li>
 				</ul>
 				<ul>
 					<li>
-						<Link href="/">
-							<h4 className="white">
-								<a>Team</a>
-							</h4>
+						<Link href="https://www.myphenology.com/team">
+							<a target="_blank">
+								<h4 className="white">Team</h4>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h4 className="white">
-								<a>Approach</a>
-							</h4>
+						<Link href="https://www.myphenology.com/our-approach">
+							<a target="_blank">
+								<h4 className="white">Approach</h4>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h4 className="white">
-								<a>Ingredients</a>
-							</h4>
+						<Link href="https://www.myphenology.com/ingredients">
+							<a target="_blank">
+								<h4 className="white">Ingredients</h4>
+							</a>
 						</Link>
 					</li>
 				</ul>
 				<ul className="d-none d-md-block">
 					<li>
-						<Link href="/">
-							<h5 className="white link">
-								<a>Facebook</a>
-							</h5>
+						<Link href="https://www.facebook.com/MyPhenology/">
+							<a target="_blank">
+								<h5 className="white link">Facebook</h5>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h5 className="white link">
-								<a>Instagram</a>
-							</h5>
+						<Link href="https://www.instagram.com/myphenology/">
+							<a target="_blank">
+								<h5 className="white link">Instagram</h5>
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
-							<h5 className="white link">
-								<a>LinkedIn</a>
-							</h5>
+						<Link href="https://www.linkedin.com/company/myphenology/">
+							<a target="_blank">
+								<h5 className="white link">LinkedIn</h5>
+							</a>
 						</Link>
 					</li>
 				</ul>
 				<div className={`${styles.footerLinks} d-md-none`}>
 					<span>
-						<Link href="/">
+						<Link href="https://www.myphenology.com/sign-in">
 							<a>
 								<svg
 									width="32"
@@ -213,7 +217,7 @@ const Drawer = ({ showDrawer, handleDrawer }) => {
 						</Link>
 					</span>
 					<span>
-						<Link href="/">
+						<Link href="https://www.myphenology.com/assessment">
 							<a>
 								take the assessment
 								<svg
