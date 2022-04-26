@@ -3,14 +3,9 @@ import Banner from "./components/Banner";
 import BlockTextFive from "./components/BlockTextFive";
 import CustomerFavorites from "./components/CustomerFavorites";
 import Layout from "./components/Layout";
+import { info } from "../data";
 
-const PhenelogyTeen = ({ info }) => {
-	const [data, setData] = useState(undefined);
-
-	useEffect(() => {
-		setData(info[0].ms4);
-	}, []);
-
+const PhenelogyTeen = ({ data }) => {
 	return (
 		<>
 			<Layout title={"Menopause - Retargeting"}>
@@ -23,12 +18,9 @@ const PhenelogyTeen = ({ info }) => {
 };
 
 export async function getServerSideProps() {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data.json`);
-	const data = await response.json();
-
 	return {
 		props: {
-			info: data,
+			data: info[0]?.ms4,
 		},
 	};
 }

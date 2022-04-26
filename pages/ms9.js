@@ -7,14 +7,9 @@ import BlockTextTwo from "./components/BlockTextTwo";
 import BlockTextFour from "./components/BlockTextFour";
 import CustomerFavorites from "./components/CustomerFavorites";
 import Layout from "./components/Layout";
+import { info } from "../data";
 
-const PhenelogyNine = ({ info }) => {
-	const [data, setData] = useState(undefined);
-
-	useEffect(() => {
-		setData(info[0].ms3);
-	}, []);
-
+const PhenelogyNine = ({ data }) => {
 	return (
 		<Layout title="Comprehensive">
 			<Banner info={data?.banner} />
@@ -29,12 +24,9 @@ const PhenelogyNine = ({ info }) => {
 };
 
 export async function getServerSideProps() {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data.json`);
-	const data = await response.json();
-
 	return {
 		props: {
-			info: data,
+			data: info[0]?.ms3,
 		},
 	};
 }
